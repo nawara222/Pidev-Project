@@ -1,0 +1,53 @@
+/* General styles for all AnchorPane elements */
+.root {
+    -fx-background-color: #f8f4e1; /* Background color for the application */
+}
+
+/* Style for TableView to give it a glow effect */
+TableView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0.5, 0, 0); /* Subtle shadow for depth */
+}
+
+/* Style for TableColumn headers */
+.table-column {
+    -fx-background-color: #778DA9; /* Background color for table column headers */
+    -fx-text-fill: #FFFFFF; /* White text for headers */
+    -fx-font-size: 14px; /* Font size for text in headers */
+    -fx-border-color: #415A77; /* Border color for headers */
+    -fx-border-width: 1; /* Border width for headers */
+}
+
+/* Style for Button */
+.button {
+    -fx-background-color:transparent; /* Background color */
+    -fx-font-family: "Verdana"; /* Font family */
+    -fx-font-size: 16px; /* Adjust font size here */
+    -fx-border-width: 1; /* Border width */
+    -fx-background-radius: 5; /* Rounded corners for the button */
+    -fx-border-radius: 5; /* Border radius should match the background radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 3, 0, 0, 1); /* Shadow effect */
+    -fx-padding: 3 8 3 8; /* Padding inside the button */
+    -fx-min-width: 40px; /* Minimum width for the button */
+    -fx-min-height: 15px; /* Minimum height for the button */
+}
+
+
+/* Style for Text element (e.g., Titles, Labels) */
+.text {
+    -fx-fill: #0f0a3d; /* Dark blue color for text */
+    -fx-font-family: "Verdana"; /* Updated font family */
+    -fx-font-size: 14px;
+}
+/* Style for ImageView (logo) */
+.image-view {
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 2); /* Shadow effect for images */
+}
+
+
+
+/* Focused TextField styles */
+.text-field:focused {
+    -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+    -fx-border-width: 2; /* Border width when focused */
+}
+

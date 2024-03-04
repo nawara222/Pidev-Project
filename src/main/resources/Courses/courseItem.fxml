@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="291.0" styleClass="search-button" stylesheets="@stylesCourses.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Courses.courseItemController">
+   <children>
+      <AnchorPane fx:id="apid" prefHeight="330.0" prefWidth="246.0" styleClass="transparent" stylesheets="@stylesCourses.css">
+         <children>
+            <Label fx:id="nameCI" alignment="CENTER" layoutX="161.0" layoutY="81.0" prefHeight="18.0" prefWidth="128.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="161.0" AnchorPane.topAnchor="81.0">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceCI" alignment="CENTER" layoutX="171.0" layoutY="110.0" prefHeight="18.0" prefWidth="120.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="171.0" AnchorPane.topAnchor="110.0">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeCI" alignment="CENTER" layoutX="165.0" layoutY="141.0" prefHeight="40.0" prefWidth="120.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="141.0">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="descCI" alignment="CENTER" layoutX="176.0" layoutY="170.0" prefHeight="18.0" prefWidth="110.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="176.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nbwCI" layoutX="243.0" layoutY="205.0" prefHeight="18.0" prefWidth="40.0" stylesheets="@stylesCourses.css" textFill="WHITE" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="205.0">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font></Label>
+            <Button fx:id="showlistbutton" layoutX="147.0" layoutY="14.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@stylesCourses.css" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/list_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="263.0" layoutY="109.0" text="DT" textFill="WHITE" AnchorPane.leftAnchor="263.0" AnchorPane.topAnchor="109.0">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="deletecoursebuttonF" layoutX="79.0" layoutY="296.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@stylesCourses.css" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="296.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/delete_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="editcoursebuttonF" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="28.0" styleClass="transparent" stylesheets="@stylesCourses.css" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="294.0">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/edit_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="imageC" cache="true" fitHeight="211.0" fitWidth="157.0" layoutX="14.0" layoutY="25.0" opacity="0.62" pickOnBounds="true" styleClass="imageview-container">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

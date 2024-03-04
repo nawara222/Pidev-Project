@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" stylesheets="@stylesCourses.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Courses.StatController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0">
+         <children>
+            <BorderPane fx:id="updateButton" layoutX="7.0" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="6.0">
+               <left>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="284.0" styleClass="shadow" stylesheets="@stylesCourses.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="343.0">
+                           <children>
+                              <ImageView fx:id="fruitImg" fitHeight="98.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="165.0" text="Courses" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="40.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="97.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                        <VBox fx:id="chosenFruitCard" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="421.0" prefWidth="228.0" styleClass="free-delivery-card" stylesheets="@stylesCourses.css">
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#showBarChart" styleClass="transparent" stylesheets="@stylesCourses.css">
+                                 <graphic>
+                                    <ImageView fitHeight="112.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/barChart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#showPieChart" styleClass="transparent" stylesheets="@stylesCourses.css">
+                                 <graphic>
+                                    <ImageView fitHeight="118.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pieChart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="779.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="66.0" prefWidth="807.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#returna" styleClass="transparent">
+                                 <graphic>
+                                    <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="transparent">
+                                       <image>
+                                          <Image url="@../images/home.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label prefHeight="29.0" prefWidth="88.0" text="language" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="74.0" text="English" textFill="#878787" underline="true">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="393.0" HBox.hgrow="ALWAYS" />
+                              <Label prefHeight="62.0" prefWidth="100.0" text="My Account" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/person.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="933.0" styleClass="shadow">
+                           <children>
+                              <BarChart fx:id="barChart" categoryGap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="425.0" style="-fx-background-insets: #778da9;" styleClass="pie-chart" stylesheets="@stylesCourses.css">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis minorTickLength="3.0" side="LEFT" styleClass="transparent" stylesheets="@stylesCourses.css" tickLabelFill="#415a77" tickUnit="1.0" />
+                                </yAxis>
+                                 <HBox.margin>
+                                    <Insets top="50.0" />
+                                 </HBox.margin>
+                              </BarChart>
+                              <PieChart fx:id="pieChart" legendVisible="false" prefHeight="704.0" prefWidth="448.0" styleClass="pie-chart" stylesheets="@stylesCourses.css">
+                                 <opaqueInsets>
+                                    <Insets bottom="10.0" top="-10.0" />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets top="50.0" />
+                                 </HBox.margin></PieChart>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

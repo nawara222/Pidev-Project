@@ -1,0 +1,169 @@
+/* Form Container */
+.form_container {
+    -fx-background-color: #e0fbfc;
+    color: #253237;
+}
+
+.form_container .element1 {
+    background-color: #253237;
+    color: #9db4c0;
+}
+
+.form_container .element2 {
+    background-color: #5c6b73;
+    color: #c9a43d;
+}
+
+.form_container Text {
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Fira Sans";
+    -fx-fill: #e0fbfc;
+}
+
+.form_container VBox {
+    -fx-border-color: #e0fbfc;
+    -fx-border-width: 0 0 0 1;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.form_container {
+    -fx-background-color: #644f4f; /* Gray background color */
+    color: #253237;
+}
+
+.form_container TextField {
+    -fx-pref-height: 250;
+    -fx-pref-height: 35;
+    -fx-background-color: #8492ab;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #aaaaaa, 3, 0, 0, 3);
+}
+
+.form_container Button {
+    -fx-background-color: linear-gradient(to right, #9da2a2, #5c6b73);
+    -fx-effect: dropshadow(three-pass-box, #aaaaaa, 3, 0, 0, 3);
+    -fx-font-size: 1.0em;
+    -fx-pref-width: 200;
+    -fx-font-family: "Fira Sans";
+    -fx-text-fill: #c9a43d;
+}
+
+.form_container Button:hover {
+    -fx-cursor: hand;
+}
+
+/* Additional UI Elements */
+.search-box {
+    -fx-background-color: #c8cbd0;
+    -fx-background-radius: 100;
+}
+
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.search-button {
+    -fx-background-color: #9db4c0;
+    -fx-background-radius: 30;
+}
+
+.right-bar {
+    -fx-background-color: #a6aaab;
+}
+
+.shadow {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.chosen-fruit-card {
+    -fx-background-color: #c2dfe3;
+    -fx-background-radius: 30;
+}
+
+.comboBox {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 30;
+}
+
+.add-btn {
+    -fx-background-color: #c2c9c9;
+    -fx-background-radius: 100;
+}
+
+.free-delivery-card {
+    -fx-background-color: #22282a;
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card {
+    -fx-background-color: #aaaaaa;
+    -fx-background-radius: 30;
+}
+
+.fruit-item {
+    -fx-background-color: #8492ab;
+    -fx-background-radius: 30;
+}
+
+/* Table View */
+.table-view {
+    -fx-background-color: #00000019;
+    -fx-text-fill: #6178ad;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropShadow(three-pass-box, rgba(159, 153, 153, 0.66), 10, 0, 0, 5);
+}
+
+/* Column Headers */
+.table-view .column-header-background {
+    -fx-background-color: #22282a;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-text-fill: #e0fbfc;
+    -fx-padding: 5 10;
+}
+
+/* First Column Styles */
+.table-view .first-column {
+    -fx-text-fill: #253237;
+    -fx-background-color: #5c6b73;
+    -fx-padding: 5 10;
+}
+
+/* Table Rows */
+.table-view .row-cell {
+    -fx-background-color: #778da9;
+    -fx-text-fill: #c9a43d;
+    -fx-padding: 5 10;
+}
+
+/* Alternate Row Color */
+.table-view .row-cell:odd {
+    -fx-background-color: #041e32;
+}
+
+/* Selected Row */
+.table-view .row-cell:selected {
+    -fx-background-color: #c9a43d;
+    -fx-text-fill: #041e32;
+}
+
+/* Hover Effect */
+.table-view .row-cell:hover {
+    -fx-background-color: #5c6b73;
+}
+
+/* Scroll Bar */
+.table-view .scroll-bar {
+    -fx-background-color: #5c6b73;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+/* Scroll Bar Thumb */
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #778da9;
+}

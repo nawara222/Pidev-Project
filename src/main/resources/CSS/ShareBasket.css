@@ -1,0 +1,41 @@
+/* Apply a general style to the whole AnchorPane */
+.anchor-pane {
+    -fx-background-color: white; /* Set the background to white */
+}
+
+/* Style for Labels to make the text bold and italic */
+.label {
+    -fx-font-size: 12px; /* Size as specified in the FXML */
+    -fx-font-family: "Arial"; /* Assuming you want Arial; replace with the actual font if needed */
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f0a3d; /* Dark blue color for the text */
+}
+
+/* Style for TextFields to give them rounded corners and a shadow */
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5; /* Rounded corners */
+    -fx-border-radius: 5; /* Border radius should match the background radius */
+    -fx-padding: 6 10; /* Padding inside the TextField */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0); /* Subtle shadow for depth */
+}
+
+/* Style for the share Button */
+.button {
+    -fx-background-color: #415A77; /* A dark shade of blue */
+    -fx-text-fill: white; /* White text for contrast */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-padding: 10 20; /* Padding inside the button */
+    -fx-font-size: 14px; /* Font size */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0); /* Shadow for depth */
+}
+
+.button:hover {
+    -fx-background-color: #2E3B55; /* Slightly lighter blue for hover */
+}
+
+.button:pressed {
+    -fx-background-color: #1C2A3C; /* Even lighter blue for pressed */
+}

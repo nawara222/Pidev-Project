@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="form_container" stylesheets="@../Courses/stylesCourses.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Workshops.AddWorkshopController">
+   <children>
+      <Button layoutX="-27.0" layoutY="30.0" mnemonicParsing="false" onAction="#returna" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/return.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox fx:id="chosenFruitCard" alignment="CENTER" layoutX="117.0" layoutY="63.0" minHeight="-Infinity" prefHeight="418.0" prefWidth="366.0" styleClass="free-delivery-card" stylesheets="@../Courses/stylesCourses.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="namewf" prefHeight="26.0" prefWidth="281.0" promptText="Enter the name" styleClass="search-box" stylesheets="@../Courses/stylesCourses.css" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="descaf" prefHeight="34.0" prefWidth="281.0" promptText="Enter a description of the workshop" styleClass="search-box" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="ressourcesf" prefHeight="34.0" prefWidth="281.0" promptText="Enter resources" styleClass="search-box" stylesheets="@../Courses/stylesCourses.css" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="durationf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="281.0" promptText="enter the duration" styleClass="search-box" stylesheets="@../Courses/stylesCourses.css" />
+               </children>
+            </HBox>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addworkshop" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #ffffff;" styleClass="shopping-online-card" stylesheets="@../Courses/stylesCourses.css" text="ADD" textFill="#444748">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="135.0" layoutY="-21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="330.0" text="Add A Workshop" textFill="#878787">
+         <font>
+            <Font name="Cambria Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

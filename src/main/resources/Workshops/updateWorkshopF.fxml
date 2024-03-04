@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Workshops.UpdateWorkshopFController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="-6.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0">
+               <top>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="112.0" prefWidth="1318.0" styleClass="table-view" stylesheets="@../Courses/stylesCourses.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="112.0" prefWidth="530.0">
+                           <children>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#homebutton" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="Home" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#artworksbutton" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="Art Works" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gotofOb" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="Courses" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eventbutton" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="Event" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#auctionbutton" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="Auction" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aboutusbutton" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css" text="About Us" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="40.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="57.0" prefWidth="338.0" stylesheets="@../Courses/stylesCourses.css">
+                           <children>
+                              <TextField fx:id="searchfw" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="235.0" promptText="Type here to search" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Button mnemonicParsing="false" onAction="#searchbuttonw" prefHeight="43.0" prefWidth="48.0" styleClass="search-button" stylesheets="@../Courses/stylesCourses.css" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="180.0" top="25.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="168.0">
+                           <HBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </HBox.margin>
+                           <children>
+                              <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#viewcartbuttonw" prefHeight="25.0" prefWidth="29.0" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css">
+                                 <graphic>
+                                    <ImageView fitHeight="49.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/cart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="-170.0" top="-10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="100.0" top="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="search-button" stylesheets="@../Courses/stylesCourses.css" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#returncF" styleClass="transparent" stylesheets="@../Courses/stylesCourses.css">
+                           <graphic>
+                              <ImageView fitHeight="54.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/return.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label alignment="CENTER" text="UPDATE WORKSHOP" textAlignment="CENTER" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="320.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cambria Bold" size="48.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="95.0" prefWidth="1100.0">
+                           <children>
+                              <Pane prefHeight="77.0" prefWidth="270.0" />
+                              <TextField fx:id="namewFU" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="590.0" promptText="Type here the Name of the Workshop" styleClass="add-btn" stylesheets="@../Courses/stylesCourses.css">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="95.0" prefWidth="1100.0">
+                           <children>
+                              <Pane prefHeight="77.0" prefWidth="270.0" />
+                              <TextField fx:id="resourceswFU" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="590.0" promptText="Type here the Ressources of the Workshop" styleClass="add-btn" stylesheets="@../Courses/stylesCourses.css">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="95.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="77.0" prefWidth="270.0" />
+                              <TextField fx:id="durationwFU" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="590.0" promptText="Type here Duration of the Workshop" styleClass="add-btn" stylesheets="@../Courses/stylesCourses.css">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="95.0" prefWidth="200.0">
+                           <children>
+                              <Pane prefHeight="86.0" prefWidth="270.0" />
+                              <TextField fx:id="descriptionwFU" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="590.0" promptText="Type here a Description of the Workshop" styleClass="add-btn" stylesheets="@../Courses/stylesCourses.css">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#updateworkshopF" prefHeight="59.0" prefWidth="176.0" styleClass="add-btn" stylesheets="@../Courses/stylesCourses.css" text="UPDATE">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="480.0" top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

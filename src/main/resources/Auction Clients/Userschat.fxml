@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox fx:controller="Controllers.ChatClient.ChatClientController" xmlns:fx="http://javafx.com/fxml" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <ListView fx:id="messageListView" />
+    <TextField fx:id="inputField" onAction="#handleSendMessage" />
+</VBox>

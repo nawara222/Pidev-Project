@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="762.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.back.User.AddController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="733.0" prefWidth="563.0" styleClass="shadow">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="554.0" stylesheets="@../styles/stylesdash.css">
+               <children>
+                  <ImageView fx:id="fruitImg" fitHeight="90.0" fitWidth="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/x.png" />
+                     </image>
+                  </ImageView>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="193.0" text="Admin" textFill="#878787">
+                     <font>
+                        <Font name="Cambria Bold" size="57.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="618.0" prefWidth="459.0" styleClass="free-delivery-card" stylesheets="@../styles/stylesdash.css">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <children>
+                        <TextField fx:id="firstname" alignment="CENTER" prefHeight="41.0" prefWidth="278.0" promptText="Type here the first name" styleClass="search-box">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="lastname" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the last name" styleClass="search-box">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ComboBox fx:id="statusComboBox" prefHeight="57.0" prefWidth="280.0" promptText="Select Status" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <children>
+                        <TextField fx:id="email" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the email" styleClass="search-box">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ComboBox fx:id="roleComboBox" prefHeight="51.0" prefWidth="273.0" promptText="Select Role" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <children>
+                        <TextField fx:id="password" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the password" styleClass="search-box">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="335.0" stylesheets="@../styles/stylesdash.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#add" prefHeight="77.0" prefWidth="223.0" styleClass="shopping-online-card" text="Add User" textFill="#444748">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#backbutton" prefHeight="25.0" prefWidth="108.0" styleClass="shopping-online-card" stylesheets="@../styles/stylesdash.css" text="Back" textFill="#444748">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

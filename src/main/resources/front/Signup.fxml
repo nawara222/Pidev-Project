@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="458.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.front.User.SignupController">
+    <children>
+        <!-- ... other components ... -->
+        <VBox alignment="CENTER" layoutX="21.0" layoutY="20.0" prefHeight="410.0" prefWidth="251.0" spacing="10.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="60.0" prefWidth="280.0" style="-fx-font-family: 'Arial'; -fx-font-size: 35;" text="Create Account" />
+                <TextField fx:id="firstNameField" prefHeight="32.0" prefWidth="280.0" promptText="First Name" />
+                <TextField fx:id="lastNameField" prefHeight="33.0" prefWidth="280.0" promptText="Last Name" />
+                <TextField fx:id="emailField" prefHeight="31.0" prefWidth="280.0" promptText="Email Address" />
+                <PasswordField fx:id="passwordField" prefHeight="36.0" prefWidth="280.0" promptText="Password" />
+                <ComboBox fx:id="roleComboBox" promptText="Select Role">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Amateur" />
+                            <String fx:value="Artist" />
+                            <!-- Add other roles as needed -->
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            <ImageView fx:id="captchaImageView" fitHeight="89.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="captchaInputField" prefHeight="25.0" prefWidth="206.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+                <Button fx:id="signUpButton" onAction="#clicksignup" prefHeight="76.0" prefWidth="101.0" text="Sign Up">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin></Button>
+            </children>
+        </VBox>
+        <!-- ... other components ... -->
+    </children>
+</AnchorPane>

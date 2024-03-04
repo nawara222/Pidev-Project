@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.Bid.UpdateBidController" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="112.0" layoutY="185.0" text=" BID ID:" />
+        <TextField fx:id="idTf" layoutX="186.0" layoutY="181.0" prefHeight="25.0" prefWidth="100.0" promptText="ID" />
+        <Label layoutX="112.0" layoutY="122.0" text="Price:" />
+        <TextField fx:id="priceTf" layoutX="186.0" layoutY="118.0" prefHeight="25.0" prefWidth="304.0" promptText="New price" />
+        <Button layoutX="423.0" layoutY="281.0" mnemonicParsing="false" onAction="#updateBid" text="Update Bid" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+/* Payment.css */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: white; /* Set the background color to white for the application */
+}
+
+/* Style for TextFields to give them rounded corners and a shadow */
+.text-field {
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-border-color: #f8f4e1;
+    -fx-border-radius: 10px; /* Make corners rounder */
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px; /* Match the border radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Shadow effect for depth */
+}
+
+.text-field:focused {
+    -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+    -fx-background-color: #f1f8ff;
+    -fx-border-width: 2; /* Border width when focused */
+}
+
+.text-field[promptText="ZIP Code"] {
+    -fx-pref-width: 200px; /* Adjust the width as needed */
+}
+
+.text {
+    -fx-fill: #0f0a3d;
+    -fx-font-size: 16px;
+}
+
+/* Style for Button */
+.button {
+    -fx-background-color: transparent; /* Make button background transparent */
+    -fx-text-fill: black; /* Set the text color to black for contrast */
+    -fx-border-radius: 15px; /* More rounded corners for the button */
+    -fx-background-radius: 15px; /* Match the border radius */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border-width: 1px; /* Thin border */
+    -fx-border-color: transparent; /* Slight grey border for visibility */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2); /* Shadow effect for buttons */
+}
+.text {
+    -fx-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; /* Make text bold */
+}
+.button:hover {
+    -fx-background-color: rgba(0,0,0,0.1); /* Slight grey background on hover */
+}
+
+.button:pressed {
+    -fx-background-color: rgba(0,0,0,0.2); /* Darker grey background when pressed */
+}.anchor-pane .text, .anchor-pane .label {
+     -fx-font-weight: bold; /* Make text bold */
+     -fx-font-size: 16px; /* Adjust the font size as needed */
+     -fx-text-fill: #0f0a3d; /* Adjust the text color as needed */
+ }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="1200.0" stylesheets="@../styles/caspian-embedded-highContrast.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.front.Feedback.FeedbackController">
+   <children>
+      <Button fx:id="goback" layoutX="1124.0" layoutY="22.0" mnemonicParsing="false" onAction="#goback" prefHeight="36.0" prefWidth="27.0" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../styles/icons8_Home_32px - Copy.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="293.0" layoutY="187.0" prefHeight="427.0" prefWidth="901.0">
+         <children>
+            <ScrollPane fx:id="itemlist" layoutX="4.0" layoutY="3.0" prefHeight="433.0" prefWidth="892.0">
+               <content>
+                  <VBox fx:id="vboxFeedbackList" prefHeight="421.0" prefWidth="890.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="106.0" fitWidth="256.0" layoutX="16.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/x.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="-5.0" layoutY="126.0" prefHeight="474.0" prefWidth="290.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Settings" prefHeight="3.0" prefWidth="290.0" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../styles/icons8_Slider__32px - Copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="17.0" prefWidth="290.0" text="Feedback" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Reset" prefHeight="31.0" prefWidth="290.0" text="Reset Password" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" prefHeight="13.0" prefWidth="290.0" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../styles/icons8-logout-66 - Copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Separator layoutX="272.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="675.0" prefWidth="29.0" />
+      <Label alignment="CENTER" layoutX="393.0" layoutY="32.0" prefHeight="112.0" prefWidth="713.0" text="Feedbacks" textAlignment="CENTER" textFill="#ddd9d9">
+         <font>
+            <Font name="System Bold Italic" size="52.0" />
+         </font>
+      </Label>
+      <Button layoutX="1031.0" layoutY="600.0" mnemonicParsing="false" onAction="#newfeedback" prefHeight="26.0" prefWidth="149.0" text="Send Feedback" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,129 @@
+/* General Styles */
+.root {
+  -fx-background-color: #ffffff; /* Background color for the application */
+}
+
+/* Apply a general style for all Text nodes */
+.text {
+  -fx-fill: #0f0a3d; /* Dark blue color for text */
+  -fx-font-family: "Verdana"; /* Updated font family */
+  -fx-font-size: 14px;
+}
+.image-view {
+  -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 2); /* Shadow effect for images */
+}
+/* Style for the title text */
+.text-title {
+  -fx-fill: #C9A43D; /* Golden color for titles */
+  -fx-font-family: "Verdana"; /* Updated font family for titles */
+  -fx-font-weight: bold;
+  -fx-font-size: 34px;
+}
+
+/* Style for Labels */
+.label {
+  -fx-text-fill: #041E32; /* Dark blue color for labels */
+  -fx-font-family: "Verdana"; /* Updated font family for labels */
+  -fx-font-size: 14px;
+}
+/* Style for quantityLabel */
+#quantityLabel {
+  -fx-text-fill: #0f0a3d; /* Sets the text color to blue */
+}
+
+/* Styles for buttons */
+.button {
+  -fx-background-color: transparent; /* Set the background to transparent */
+  -fx-background-insets: 0;
+  -fx-background-radius: 5; /* More rounded corners for a smaller button */
+  -fx-padding: 3 8 3 8; /* Further reduced padding for an even smaller button */
+  -fx-font-size: 12px; /* Even smaller font size for text in buttons */
+  -fx-border-width: 1; /* Maintain thin border */
+  -fx-border-radius: 5; /* Border border radius should match the background radius */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 3, 0, 0, 1); /* More subtle shadow */
+  -fx-min-width: 40px; /* Further reduced minimum width for the button */
+  -fx-min-height: 15px; /* Further reduced minimum height for the button */
+  -fx-text-fill: black; /* Set the text color to black for contrast */
+}
+
+
+
+/* Style for TextField */
+.text-field {
+  -fx-font-family: "Segoe UI"; /* Updated font family for text fields */
+  -fx-font-size: 12px; /* Updated font size if needed */
+  -fx-background-color: #FFFFFF; /* White background for text fields */
+  -fx-pref-height: 25px; /* Preferred height for smaller text fields */
+  -fx-background-radius: 5; /* Rounded corners for text fields */
+  -fx-border-color: #415A77; /* Border color for text fields */
+  -fx-border-width: 1; /* Border width */
+  -fx-border-radius: 5; /* Match the background radius */
+  -fx-padding: 4 7 4 7; /* Reduced padding for text content */
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 2); /* More subtle shadow */
+}
+
+.text-field:focused {
+  -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+  -fx-border-width: 2; /* Make the border more prominent when focused */
+}
+
+
+/* Style for Labels */
+.label {
+  -fx-text-fill: #C9A43D; /* Golden color for labels */
+  -fx-font-size: 14px;
+  -fx-font-weight: bold; /* Bold font weight for better legibility */
+}
+
+/* Additional styles for containers like VBox, HBox */
+.container {
+  -fx-background-color: #FFFFFF; /* White background for containers */
+  -fx-background-radius: 10; /* Rounded corners for containers */
+  -fx-padding: 10; /* Padding inside the containers */
+  -fx-spacing: 10; /* Spacing between elements inside the container */
+}
+
+/* Styles for specific elements by ID or style class */
+#element1, .element1 {
+  -fx-background-color: #041E32;
+  -fx-text-fill: #415A77;
+}
+
+#element2, .element2 {
+  -fx-background-color: #778DA9;
+  -fx-text-fill: #C9A43D;
+}
+
+/* ... (include other specific styles for your elements as needed) */
+
+/* Table styles for a professional look */
+.table-view {
+  -fx-base: #778DA9; /* Base color for table */
+  -fx-control-inner-background: #041E32; /* Background color for table */
+  -fx-background-color: #041E32; /* Background color for table */
+  -fx-table-cell-border-color: transparent; /* Hides cell borders */
+  -fx-table-header-border-color: #415A77; /* Color for header borders */
+  -fx-text-fill: #FFFFFF; /* Text color for table */
+  -fx-font-size: 12px; /* Font size for table */
+}
+
+.table-view .column-header {
+  -fx-background-color: #415A77;
+  -fx-text-fill: #FFFFFF;
+}
+
+.table-view .cell {
+  -fx-background-color: #778DA9;
+  -fx-text-fill: #C9A43D;
+  -fx-alignment: CENTER; /* Center text in table cells */
+}
+
+.table-view .cell:filled:selected {
+  -fx-background-color: #C9A43D;
+  -fx-text-fill: #041E32;
+}
+
+.table-view .cell:filled:selected:focused {
+  -fx-background-color: #C9A43D;
+  -fx-text-fill: #041E32;
+}

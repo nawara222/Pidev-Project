@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="453.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Baskets.BackBasketsController">
+   <children>
+      <TableView fx:id="orderstable" layoutX="25.0" layoutY="70.0" prefHeight="367.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="idorder" prefWidth="142.4000244140625" text="ID Order" />
+          <TableColumn fx:id="idbasket" prefWidth="105.5999755859375" text="ID Basket" />
+            <TableColumn fx:id="totalprice" prefWidth="120.7999267578125" text="Total price" />
+            <TableColumn fx:id="delete" prefWidth="120.7999267578125" text="delete" />
+        </columns>
+      </TableView>
+      <Text layoutX="191.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baskets" textAlignment="CENTER" wrappingWidth="161.8746337890625">
+         <font>
+            <Font name="Bodoni MT Italic" size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

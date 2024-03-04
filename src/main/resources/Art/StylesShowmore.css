@@ -1,0 +1,120 @@
+/* General styles for the entire application */
+.root {
+    -fx-background-color: #485f73; /* Dark slate background for contrast */
+}
+
+/* Styles for text elements to make them stand out against the background */
+.text {
+    -fx-fill: #ecf0f1; /* Light color for visibility */
+    -fx-font-family: 'Arial', sans-serif; /* Readable font */
+    -fx-font-size: 14px; /* Appropriate font size for readability */
+}
+
+/* Title text specific styles */
+#titleText {
+    -fx-fill: #ffffff; /* White color for the title text */
+    -fx-font-size: 24px; /* Larger size for the title */
+    -fx-font-weight: bold; /* Bold weight for the title */
+}
+
+/* Styles for labels to make them more visible */
+.label {
+    -fx-text-fill: #ffffff; /* White color for text in labels */
+    -fx-background-color: #2c3e50; /* Slightly lighter background for labels */
+    -fx-padding: 5px; /* Padding around label text */
+    -fx-background-radius: 4; /* Rounded corners for the label backgrounds */
+}
+
+/* Button styling for a modern, flat appearance */
+.button {
+    -fx-background-color: #2980b9; /* Nice blue for button backgrounds */
+    -fx-text-fill: #ecf0f1; /* Light color for button text */
+    -fx-background-radius: 4; /* Rounded corners for buttons */
+    -fx-padding: 10px 20px; /* Padding inside buttons */
+}
+
+.button:hover {
+    -fx-background-color: #3498db; /* Slightly lighter blue for button hover state */
+}
+
+/* Slider styling for visibility */
+.slider .thumb {
+    -fx-background-color: #f1c40f; /* Bright color for the slider thumb */
+}
+
+.slider .track {
+    -fx-background-color: #7f8c8d; /* Contrasting color for the slider track */
+}
+
+/* MediaView and ImageView specific styling */
+.media-view, .image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 5, 0.0, 0, 1); /* Shadow for depth */
+}
+
+/* QR code image view specific styling */
+#qrCodeImg {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 5, 0.0, 0, 1); /* Shadow for depth */
+}
+
+/* Back button specific styling */
+#goHomis > .graphic > .image-view, .button > .graphic > .image-view {
+    -fx-fit-width: 25px; /* Width for icons */
+    -fx-fit-height: 25px; /* Height for icons */
+}
+
+/* QRCode button specific styling */
+#CodeQr {
+    -fx-background-color: #16a085; /* Distinct color for the QRCode button */
+}
+/* General styles for text elements */
+.text {
+    -fx-fill: #ffffff; /* Ensures that text is white for visibility */
+    -fx-font-family: 'Arial', sans-serif; /* A clean, readable font family */
+}
+
+/* Styles for text elements that need to stand out, like titles and important info */
+.text.title, .text.header {
+    -fx-font-size: 20px; /* Larger font size for titles and headers */
+    -fx-font-weight: bold; /* Bold font weight for prominence */
+}
+
+/* Styles for regular label text */
+.label {
+    -fx-text-fill: #ffffff; /* White color for text in labels to ensure legibility */
+    -fx-font-size: 14px; /* Appropriate font size for regular labels */
+}
+
+/* Styles for important labels, such as category names or section titles */
+.label.important {
+    -fx-font-weight: bold; /* Bold font weight for important labels */
+    -fx-font-size: 16px; /* Slightly larger font size for important labels */
+}
+
+/* Specific styles for interactive button texts */
+.button .text {
+    -fx-text-fill: #ffffff; /* White color for text in buttons for visibility */
+    -fx-font-weight: bold; /* Bold font weight for button text */
+}
+
+/* Styles for the QRCode label to make it distinct and readable */
+#qrCodeLabel {
+    -fx-text-fill: #16a085; /* A distinct color for the QRCode label text */
+    -fx-font-size: 16px; /* Slightly larger font size for QRCode label */
+}
+
+/* Style adjustments for descriptive text */
+.text.description {
+    -fx-wrap-text: true; /* Ensures text wraps within its container */
+    -fx-font-size: 14px; /* Keeps the font size consistent with other text */
+}
+
+/* Style adjustments for the video path and duration text */
+#pathvideo, #lbl_duration {
+    -fx-fill: #ecf0f1; /* Light color for visibility */
+    -fx-font-size: 12px; /* Smaller font size for meta information */
+}
+
+/* If you have any text fields or input areas, this style will ensure their text is readable */
+.text-field, .text-area {
+    -fx-text-inner-color: #ecf0f1; /* Light color for text typed by the user */
+}

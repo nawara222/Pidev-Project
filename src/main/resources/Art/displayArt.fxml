@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseClicked="#click" prefHeight="617.0" prefWidth="1234.0" styleClass="form_container" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Art.DisplayArtController">
+   <children>
+      <TableView fx:id="ArtTableView" layoutX="276.0" layoutY="141.0" onMouseClicked="#click" prefHeight="386.0" prefWidth="803.0" stylesheets="@../styles/css/styles.css">
+        <columns>
+          <TableColumn fx:id="titlec" prefWidth="57.599945068359375" text="title" />
+          <TableColumn fx:id="materialsc" prefWidth="84.0" text="Materials" />
+            <TableColumn fx:id="widthc" prefWidth="64.0" text="width" />
+            <TableColumn fx:id="heightc" prefWidth="72.800048828125" text="height" />
+            <TableColumn fx:id="typec" prefWidth="56.0" text="Type" />
+            <TableColumn fx:id="cityc" prefWidth="79.199951171875" text="city" />
+            <TableColumn fx:id="descriptionc" prefWidth="96.800048828125" text="description" />
+            <TableColumn fx:id="priceT" prefWidth="55.20001220703125" text="price" />
+            <TableColumn fx:id="categoryT" prefWidth="88.0" text="Category" />
+            <TableColumn fx:id="path" prefWidth="68.800048828125" text="Path" />
+            <TableColumn fx:id="path1" prefWidth="86.39996337890625" text="Video Path" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Text fill="#809be0" layoutX="380.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View your Artwork" wrappingWidth="292.616455078125">
+         <font>
+            <Font name="Cambria" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="updateC" layoutX="353.0" layoutY="553.0" mnemonicParsing="false" onAction="#update" styleClass="add-btn" stylesheets="@../styles/css/styles.css" text="update">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="deleteC" layoutX="847.0" layoutY="552.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="167.0" styleClass="add-btn" stylesheets="@../styles/css/styles.css" text="delete">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="matiralsu" layoutX="13.0" layoutY="171.0" prefWidth="235.0" promptText="materials" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="descriptionu" layoutX="13.0" layoutY="380.0" prefWidth="235.0" promptText="description" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="titleu" layoutX="13.0" layoutY="129.0" prefWidth="235.0" promptText="title" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="widthu" layoutX="13.0" layoutY="254.0" prefWidth="235.0" promptText="width" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="heightu" layoutX="13.0" layoutY="213.0" prefWidth="235.0" promptText="height" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="typeu" layoutX="13.0" layoutY="296.0" prefWidth="235.0" promptText="Rarity" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <TextField fx:id="cityu" layoutX="12.0" layoutY="338.0" prefWidth="235.0" promptText="city" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <Button fx:id="returnc" layoutX="31.0" layoutY="94.0" mnemonicParsing="false" onAction="#rereturn" prefHeight="26.0" prefWidth="117.0" styleClass="add-btn" stylesheets="@../styles/css/styles.css" text="Return">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="prices" layoutX="12.0" layoutY="422.0" prefWidth="235.0" promptText="price" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <HBox layoutX="-4.0" layoutY="-3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="1302.0" spacing="10.0" styleClass="table-view" stylesheets="@../styles/css/styles.css">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="157.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#gohome" prefHeight="26.0" prefWidth="86.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="Home">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" mnemonicParsing="false" prefHeight="34.0" prefWidth="227.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="Art Works">
+               <HBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="Auction">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="Courses">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="Event">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="226.0" styleClass="button_menu_bar" stylesheets="@../styles/css/style.css" text="About Us">
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Logout" prefHeight="25.0" prefWidth="194.0" text="Logout ">
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#settings" prefHeight="25.0" prefWidth="200.0" text="Settings">
+               <HBox.margin>
+                  <Insets left="10.0" right="15.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="35.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ComboBox fx:id="categoriChoix" layoutX="10.0" layoutY="462.0" prefHeight="35.0" prefWidth="235.0" promptText="Category " styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <HBox alignment="CENTER" layoutX="911.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="58.0" prefWidth="386.0" stylesheets="@../styles/css/styles.css">
+         <children>
+            <TextField fx:id="searchforTitle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#searchForArt" prefHeight="41.0" prefWidth="318.0" promptText="Type here to search" styleClass="search-box">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../styles/css/styles.css" />
+               </stylesheets>
+            </TextField>
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="66.0" styleClass="search-button" stylesheets="@../styles/css/styles.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-chercher-128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="search-box" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </HBox>
+      <Pane fx:id="backImages" layoutX="1082.0" layoutY="148.0" prefHeight="350.0" prefWidth="212.0" styleClass="pane" stylesheets="@../styles/css/styles.css">
+         <children>
+            <Button fx:id="Images" layoutX="164.0" layoutY="8.0" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" onAction="#UpdateImages" prefHeight="25.0" prefWidth="25.0" styleClass="transparent">
+               <graphic>
+                  <ImageView fx:id="UpdateImage" fitHeight="57.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-plus-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="imageARTS" fitHeight="254.0" fitWidth="214.0" layoutX="8.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TextField fx:id="paths" layoutX="11.0" layoutY="502.0" prefWidth="235.0" promptText="Path Image" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <Button fx:id="Sort" layoutX="860.0" layoutY="98.0" maxHeight="50.0" maxWidth="50.0" minHeight="18.0" minWidth="35.0" mnemonicParsing="false" onAction="#Sort" prefHeight="18.0" prefWidth="50.0" styleClass="transparent" stylesheets="@../styles/css/styles.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sortup.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="PDF" layoutX="809.0" layoutY="90.0" maxHeight="50.0" maxWidth="50.0" minHeight="-Infinity" minWidth="50.0" mnemonicParsing="false" onAction="#PDF" prefHeight="43.0" prefWidth="50.0" styleClass="transparent" stylesheets="@../styles/css/styles.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pdf.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Sortdecroissant" layoutX="860.0" layoutY="116.0" maxHeight="50.0" maxWidth="50.0" minHeight="18.0" minWidth="35.0" mnemonicParsing="false" onAction="#Sortdecroissant" prefHeight="18.0" prefWidth="50.0" styleClass="transparent" stylesheets="@../styles/css/styles.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sortDown.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="1164.0" layoutY="509.0" maxWidth="13.0" mnemonicParsing="false" onAction="#play_videos" prefHeight="40.0" prefWidth="50.0" styleClass="transparent">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="1.0">
+               <image>
+                  <Image url="@../images/bouton-jouer.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D minY="3.0" />
+               </viewport>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="pathVideo" layoutX="13.0" layoutY="542.0" prefWidth="235.0" promptText="Path Video" styleClass="search-button" stylesheets="@../styles/css/styles.css" />
+      <Button layoutX="764.0" layoutY="92.0" mnemonicParsing="false" onAction="#excel">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/etiquette-de-prix.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

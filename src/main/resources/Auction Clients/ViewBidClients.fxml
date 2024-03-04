@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="647.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Client.ViewBidUsers">
+    <children>
+        <AnchorPane layoutX="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="1116.0" style="-fx-background-color: #165a72;">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="6.0" prefHeight="647.0" prefWidth="253.0" style="-fx-background-color: #134b5f;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <ImageView fx:id="ImageView" fitHeight="146.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="50.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="usersbutton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="253.0" styleClass="buttonBID" stylesheets="@Stylesheet.css" text="Biders" textAlignment="CENTER" textFill="#030303">
+                            <graphic>
+                                <ImageView fitHeight="36.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/BID.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                     <font>
+                        <Font name="Calibri" size="23.0" />
+                     </font>
+                        </Button>
+                  <VBox prefHeight="32.0" prefWidth="253.0" />
+                        <Button fx:id="chatbutton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Userschat" prefHeight="91.0" prefWidth="253.0" styleClass="buttonBID" stylesheets="@Stylesheet.css" text="CHAT">
+                            <graphic>
+                                <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/chat.512x512.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                     <font>
+                        <Font name="Calibri Bold Italic" size="23.0" />
+                     </font>
+                        </Button>
+                  <VBox prefHeight="33.0" prefWidth="253.0" />
+                        <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="253.0" styleClass="buttonBID" stylesheets="@Stylesheet.css" text="Auctions" textAlignment="CENTER" textFill="#030303">
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/auction.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                     <font>
+                        <Font name="Calibri Bold Italic" size="20.0" />
+                     </font>
+                        </Button>
+                        <VBox alignment="CENTER" prefHeight="123.0" prefWidth="253.0">
+                            <children>
+                                <Label fx:id="highestbid" alignment="CENTER" contentDisplay="CENTER" prefHeight="103.0" prefWidth="253.0" textAlignment="CENTER" textFill="#3ebbe1">
+                                    <font>
+                                        <Font name="Calibri Bold Italic" size="23.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="170.0" prefWidth="253.0">
+                            <children>
+                                <Label text="1" textFill="#3ebbe1">
+                                    <font>
+                                        <Font name="System Bold" size="26.0" />
+                                    </font>
+                                </Label>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="179.0" text="Users in this bid" textFill="#fffdfd">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <StackPane layoutX="258.0" prefHeight="175.0" prefWidth="858.0" style="-fx-background-color: #02030A;">
+                    <children>
+                        <Pane fx:id="pnlOverview" prefHeight="459.0" prefWidth="575.0" style="-fx-background-color: #165a72;">
+                            <children>
+                                <HBox fx:id="Bidhere" alignment="CENTER_LEFT" layoutX="555.0" layoutY="3.0" prefHeight="164.0" prefWidth="300.0" spacing="50.0" styleClass="free-delivery-card" stylesheets="@Stylesheet.css">
+                                    <children>
+                                        <VBox alignment="CENTER" prefHeight="143.0" prefWidth="305.0">
+                                 <children>
+                                              <Button onAction="#AddBidUsers" prefHeight="127.0" prefWidth="218.0" styleClass="buttonBID" stylesheets="@Stylesheet.css" textFill="#2d6cff">
+                                                  <font>
+                                                      <Font name="Century Schoolbook Bold" size="22.0" />
+                                                  </font>
+                                       <graphic>
+                                                    <ImageView fitHeight="56.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../img/BID.png" />
+                                                        </image>
+                                                    </ImageView>
+                                       </graphic>
+                                              </Button>
+                                 </children></VBox>
+                                    </children>
+                                </HBox>
+                        <TextArea fx:id="auctiondescription" editable="false" prefHeight="175.0" prefWidth="552.0" styleClass="text-area" stylesheets="@Stylesheet.css" wrapText="true">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="17.0" />
+                           </font>
+                        </TextArea>
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+                <TableView fx:id="bidTableView" layoutX="259.0" layoutY="175.0" prefHeight="470.0" prefWidth="858.0" stylesheets="@Stylesheet.css">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="222.0" text="ID Bid" />
+                        <TableColumn fx:id="AmountColumn" prefWidth="354.0" text="Bid Amount" />
+                        <TableColumn fx:id="UserColumn" prefWidth="281.0" text="User ID" />
+
+                    </columns>
+                </TableView>
+            </children>
+            <effect>
+                <DropShadow color="#1b1eeb" />
+            </effect>
+        </AnchorPane>
+    </children>
+</AnchorPane>

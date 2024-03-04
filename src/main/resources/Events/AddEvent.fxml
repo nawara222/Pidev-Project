@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Event.AddEventController">
+    <children>
+        <Button layoutX="-27.0" layoutY="30.0" mnemonicParsing="false" onAction="#returnac" styleClass="transparent" stylesheets="@styles.css">
+            <graphic>
+                <ImageView fitHeight="80.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/return.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <VBox fx:id="chosenFruitCard" alignment="CENTER" layoutX="117.0" layoutY="62.0" minHeight="-Infinity" prefHeight="418.0" prefWidth="366.0" styleClass="free-delivery-card" stylesheets="@styles.css">
+            <children>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventNameTF" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event name" styleClass="search-box" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets bottom="-10.0" top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventDateTF" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event Date" styleClass="search-box">
+                            <HBox.margin>
+                                <Insets top="20.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventDurationTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event Duration" styleClass="search-box" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventTypeTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event Type " styleClass="search-box" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventEntryFeeTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event Entry Fee " styleClass="search-box" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <TextField fx:id="eventCapacityTF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="281.0" promptText="Enter Event Capacity " styleClass="search-box" stylesheets="@styles.css">
+                            <HBox.margin>
+                                <Insets top="10.0" />
+                            </HBox.margin></TextField>
+                    </children>
+                </HBox>
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addEvent" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="shopping-online-card" stylesheets="@styles.css" text="ADD" textFill="#444748">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="4.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <Label layoutX="181.0" layoutY="-21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="270.0" text="Add An Event" textFill="#878787">
+            <font>
+                <Font name="Cambria Bold" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

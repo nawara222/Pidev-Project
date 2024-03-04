@@ -1,0 +1,159 @@
+/* Table styles for a professional and modern look */
+.root {
+    -fx-background-color: #ffffff; /* Your chosen background color */
+}AnchorPane {
+     -fx-background-color: #ffffff; /* Light background for better readability */
+ }
+.image-view {
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 2); /* Shadow effect for images */
+}
+
+.table-view {
+    -fx-base: #f8f4e1; /* Light base color for table, matches the app background */
+    -fx-control-inner-background: #FFFFFF; /* White background for table rows */
+    -fx-background-color: #FFFFFF; /* White background for the table view */
+    -fx-background-radius: 10; /* Rounded corners for the table view */
+    -fx-table-cell-border-color: transparent; /* Clear cell borders for a cleaner look */
+    -fx-text-fill: #0f0a3d; /* Dark blue color for text */
+    -fx-font-family: "Arial"; /* Updated font family */
+    -fx-font-size: 14px; /* Increased font size for better readability */
+    -fx-row-height: 30.0; /* Increased row height for larger rows */
+    -fx-padding: 10; /* Padding inside the table view */
+}
+
+.table-view .column-header {
+    -fx-background-color: rgba(19, 56, 111, 0.5); /* Golden color for column headers */
+    -fx-background-radius: 10 10 0 0; /* Rounded corners for the column headers, top left and right */
+    -fx-text-fill: #f8f4e1; /* Dark blue text for contrast */
+    -fx-font-weight: bold; /* Bold font weight for column headers */
+    -fx-font-size: 16px; /* Larger font size for headers */
+    -fx-min-height: 35px; /* Increased height for the column headers */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #f8f4e1; /* Dark blue text in headers for readability */
+    -fx-padding: 5; /* Padding for the column header labels */
+}
+
+.table-view .cell {
+    -fx-background-color: #f8f4e1; /* Light cream background color for cells */
+    -fx-background-insets: 0.5; /* Small inset to create a subtle border effect */
+    -fx-background-radius: 5; /* Slightly rounded corners for cells */
+    -fx-padding: 5 10; /* Increased padding for cells content */
+    -fx-border-color: #d0cece; /* Border color for cells */
+    -fx-border-width: 0.5; /* Thin border for a clean look */
+    -fx-text-fill: #0f0a3d; /* Text color for readability */
+    -fx-alignment: center-left; /* Align text to the center-left in cells */
+}
+
+.table-view .cell:filled:selected, .table-view .cell:filled:selected:focused {
+    -fx-background-color: rgba(19, 56, 111, 0.5); /* Golden color for selected cells */
+    -fx-text-fill: #f8f4e1; /* Dark blue text for selected cells */
+    -fx-background-radius: 5; /* Rounded corners for selected cells */
+}
+
+
+/* Button styles within the table view */
+.table-view .button {
+    -fx-background-color: #778DA9;
+    -fx-text-fill: #FFFFFF; /* White text for buttons */
+    -fx-font-family: "Arial"; /* Consistent font family */
+    -fx-font-size: 12px; /* Font size for buttons */
+    -fx-border-color: #415A77; /* Border color for buttons */
+    -fx-border-radius: 5; /* Rounded corners for buttons */
+    -fx-padding: 3 8 3 8; /* Padding inside buttons */
+    -fx-min-width: 60px; /* Minimum width for buttons */
+    -fx-min-height: 30px; /* Minimum height for buttons */
+}
+.button {
+    -fx-background-color: transparent; /* Set the background to transparent */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5; /* More rounded corners for a smaller button */
+    -fx-padding: 3 8 3 8; /* Further reduced padding for an even smaller button */
+    -fx-font-size: 12px; /* Even smaller font size for text in buttons */
+    -fx-border-width: 1; /* Maintain thin border */
+    -fx-border-radius: 5; /* Border border radius should match the background radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 3, 0, 0, 1); /* More subtle shadow */
+    -fx-min-width: 40px; /* Further reduced minimum width for the button */
+    -fx-min-height: 15px; /* Further reduced minimum height for the button */
+    -fx-text-fill: black; /* Set the text color to black for contrast */
+}
+
+.table-view .button:hover {
+    -fx-background-color: #415A77; /* Darker shade on hover */
+    -fx-text-fill: #f8f4e1; /* Golden text on hover */
+}
+.text {
+    -fx-fill: #0f0a3d; /* Dark blue color for text */
+    -fx-font-family: "Verdana"; /* Updated font family */
+    -fx-font-size: 14px;
+}
+.choice-box {
+    -fx-padding: 6px;
+    -fx-font-size: 14px;
+    -fx-border-color: #f8f4e1;
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px; /* Match the border radius for background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Shadow effect for depth */
+}
+.choice-box {
+    -fx-padding: 3px; /* Reduced padding for a thinner look */
+    -fx-font-size: 14px;
+    -fx-border-color: #f8f4e1;
+    -fx-border-radius: 7px; /* Rounded corners */
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px; /* Match the border radius for background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 5); /* Subtle shadow effect for depth */
+}
+
+.choice-box .cell {
+    -fx-padding: 3px; /* Reduced padding for dropdown items */
+    -fx-font-size: 14px;
+}
+
+.choice-box:focused {
+    -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+}
+
+.choice-box .list-view {
+    -fx-background-color: #ffffff; /* Background color of the dropdown list */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px; /* Rounded corners for the dropdown list */
+}
+
+.choice-box .list-cell {
+    -fx-border-color: transparent; /* Hide border for list cells */
+    -fx-background-color: transparent; /* Transparent background for list cells */
+}
+
+.choice-box:hover {
+    -fx-border-color: #C9A43D; /* Slight highlight on hover */
+}
+
+.choice-box:showing {
+    -fx-background-color: #f1f8ff; /* Lighter color when list is showing */
+}
+
+.choice-box .arrow-button .arrow {
+    -fx-background-color: #C9A43D; /* Arrow color to match the theme */
+}.text-field {
+     -fx-padding: 5px;
+     -fx-font-size: 14px;
+     -fx-border-color: #f8f4e1;
+     -fx-border-radius: 10px; /* Make corners rounder */
+     -fx-background-color: #ffffff;
+     -fx-background-radius: 10px; /* Match the border radius */
+     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Shadow effect for depth */
+ }
+
+.text-field:focused {
+    -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+    -fx-background-color: #f1f8ff;
+    -fx-border-width: 2; /* Border width when focused */
+}
+.text {
+    -fx-fill: #0f0a3d;
+    -fx-font-size: 16px;
+}
+

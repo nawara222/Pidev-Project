@@ -1,0 +1,25 @@
+/* General PieChart styling */
+.pie-chart {
+    -fx-font-weight: bold; /* Makes text bold */
+    -fx-start-angle: 90;
+}
+
+/* Specific styling for the pie chart data */
+.chart-pie-label {
+    -fx-fill: #041E32; /* Dark blue color for the text */
+}
+
+/* Styling for the pie chart segments using the provided colors */
+.default-color0.chart-pie { /* Color for the first segment */
+    -fx-pie-color: #C9A43D;
+}
+.default-color1.chart-pie { /* Color for the second segment */
+    -fx-pie-color: #415A77;
+}
+/* Add more colors as needed for more segments */
+
+/* Legend styling */
+.chart-legend-item {
+    -fx-text-fill: #041E32; /* Dark blue color for the legend text */
+    -fx-font-weight: bold; /* Makes legend text bold */
+}

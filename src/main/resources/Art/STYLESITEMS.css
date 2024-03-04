@@ -1,0 +1,52 @@
+/* Main anchor pane styling */
+#apid {
+    -fx-background-color: #f8f8f8; /* Light background color */
+    -fx-border-color: #dcdcdc; /* Slight border for definition */
+    -fx-border-radius: 5; /* Rounded corners for the pane */
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #2c3e50; /* Dark blue color for text for contrast */
+    -fx-font-family: 'Arial', sans-serif; /* Consistent font family */
+    -fx-font-size: 16px; /* Slightly larger font size for better readability */
+    -fx-background-color: #ecf0f1; /* Light background for labels to make them stand out */
+    -fx-padding: 10px; /* Padding around the text */
+    -fx-alignment: center; /* Center text in label */
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.15) , 0, 0.0 , 0, 1.0 ); /* Subtle shadow for depth */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #3498db; /* Flat blue color for buttons */
+    -fx-text-fill: white; /* White text on buttons */
+    -fx-font-weight: bold; /* Bold font for text on buttons */
+    -fx-border-radius: 5; /* Rounded corners for buttons */
+    -fx-background-radius: 5; /* Ensures the background fills the rounded corners */
+    -fx-padding: 10px 20px; /* Top/bottom, Left/right padding */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Slightly darker blue on hover for interactive feedback */
+}
+
+/* Image and ImageView styling */
+.image-view, .button > .graphic > .image-view {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.2) , 10, 0, 0, 10 ); /* Shadow for depth */
+}
+
+.transparent {
+    -fx-background-color: transparent; /* Transparent background for buttons with icons */
+}
+
+/* Specifically for favorite and cart buttons */
+#favorite, .button[styleClass="transparent"] {
+    -fx-background-radius: 15; /* More rounded for icon buttons */
+    -fx-padding: 5px; /* Less padding for icon buttons */
+}
+
+/* Icon sizing inside buttons */
+.button > .graphic > .image-view {
+    -fx-fit-width: 25px; /* Width for icons */
+    -fx-fit-height: 25px; /* Height for icons */
+}

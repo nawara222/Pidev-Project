@@ -1,0 +1,207 @@
+.form_container {
+    -fx-background-color: #ffffff;
+    color: #041e32;
+}
+
+.form_container .element1 {
+    background-color: #041e32;
+    color: #415a77;
+}
+
+.form_container .element2 {
+    background-color: #778da9;
+    color: #c9a43d;
+}
+
+.form_container Text {
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Fira Sans";
+    -fx-fill: #041e32; /* Use the same color as specified for the text in .form_container */
+}
+
+.form_container VBox {
+    /*-fx-border-color: #041e32; Use the same color as specified for the text in .form_container */
+    -fx-border-width: 0 0 0 1;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+.form_container TextField {
+    -fx-pref-height: 250;
+    -fx-pref-height: 35;
+    -fx-background-color: #ffffff;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #aaaaaa, 3, 0, 0, 3);
+}
+
+.form_container Button {
+    -fx-background-color: linear-gradient(to right, #041e32, #415a77); /* Use the specified colors */
+    -fx-effect: dropshadow(three-pass-box, #aaaaaa, 3, 0, 0, 3);
+    -fx-font-size: 1.0em;
+    -fx-pref-width: 200;
+    -fx-font-family: "Fira Sans";
+    -fx-text-fill: #c9a43d; /* Use the specified color for the text */
+}
+
+.form_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.search-box {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.search-button {
+    -fx-background-color: #778da9; /* Use the specified color */
+    -fx-background-radius: 30;
+}
+.imageview-container {
+    -fx-background-radius: 30;
+}
+
+.right-bar {
+    -fx-background-color: #c9a43d; /* Use the specified color */
+}
+
+.shadow {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.chosen-fruit-card {
+    -fx-background-color: #c9a43d; /* Use the specified color */
+    -fx-background-radius: 30;
+}
+
+.comboBox {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 30;
+}
+
+.add-btn {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+.free-delivery-card {
+    -fx-background-color: #778da9; /* Use the specified color */
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card {
+    -fx-background-color: #aaaaaa; /* Adjusted case for consistency */
+    -fx-background-radius: 30;
+}
+
+.fruit-item {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30;
+}
+/* Table View Container */
+.table-view {
+    -fx-background-color: #00000019;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+/* Column Headers */
+.table-view .column-header-background {
+    -fx-background-color: #415a77;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5 10;
+}
+
+/* First Column Styles */
+.table-view .first-column {
+    -fx-text-fill: #041e32; /* Text color for the first column */
+    -fx-background-color: #415a77; /* Background color for the first column */
+    -fx-padding: 5 10;
+}
+
+
+/* Table Rows */
+.table-view .row-cell {
+    -fx-background-color: #778da9;
+    -fx-text-fill: #c9a43d;
+    -fx-padding: 5 10;
+}
+
+/* Alternate Row Color */
+.table-view .row-cell:odd {
+    -fx-background-color: #041e32;
+}
+
+/* Selected Row */
+.table-view .row-cell:selected {
+    -fx-background-color: #c9a43d;
+    -fx-text-fill: #041e32;
+}
+
+/* Hover Effect */
+.table-view .row-cell:hover {
+    -fx-background-color: #415a77;
+}
+
+/* Scroll Bar */
+.table-view .scroll-bar {
+    -fx-background-color: #415a77;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+/* Scroll Bar Thumb */
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #778da9;
+}
+/* stylesCourses.css */
+
+.pie-chart .slice0 {
+    -fx-pie-color: rgba(119, 141, 169, 1);
+}
+
+.pie-chart .slice1 {
+    -fx-pie-color: rgba(65, 90, 119, 1);
+}
+
+.pie-chart .slice2 {
+    -fx-pie-color: rgba(170, 170, 170, 1);
+}
+
+.pie-chart .slice3 {
+    -fx-pie-color: rgba(201, 164, 61, 1);
+}
+
+.pie-chart .slice4 {
+    -fx-pie-color: rgba(4, 30, 50, 1);
+}
+.table-view-new {
+    -fx-font-size: 14px;
+    -fx-font-family: "Cambria";
+    -fx-base: #415a77;
+    -fx-control-inner-background: #f9f9f9;
+    -fx-background-color: #f2f2f2;
+    -fx-table-cell-border-color: #d0d0d0;
+    -fx-table-header-border-color: #d0d0d0;
+    -fx-base-radius: 30px; /* Adjust the radius for rounding */
+    -fx-padding: 10px;
+    -fx-selection-bar: #8492ab;
+    -fx-selection-bar-non-focused: #a4a7ab;
+}
+
+.table-view .header-cell {
+    -fx-base: #415a77;
+    -fx-background-color: #415a77;
+    -fx-border-radius: 10px; /* Adjust the radius as needed */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

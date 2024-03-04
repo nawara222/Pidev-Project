@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" stylesheets="@stylesCourses.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Courses.ShowCoursesController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0">
+         <children>
+            <BorderPane layoutX="7.0" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="6.0">
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="435.0" styleClass="shadow" stylesheets="@stylesCourses.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="453.0">
+                           <children>
+                              <ImageView fx:id="fruitImg" fitHeight="98.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="165.0" text="Courses" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="40.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="57.0" prefWidth="338.0" stylesheets="@stylesCourses.css" VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                           <children>
+                              <TextField fx:id="searchforname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#searchcouseF" prefHeight="51.0" prefWidth="235.0" promptText="Type here to search" styleClass="transparent" stylesheets="@stylesCourses.css">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="48.0" styleClass="search-button" stylesheets="@stylesCourses.css" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                           </children>
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </HBox>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="69.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                        <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="535.0" prefWidth="100.0" styleClass="free-delivery-card" stylesheets="@stylesCourses.css">
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                                 <children>
+                                    <TextField fx:id="namefu" alignment="CENTER" prefHeight="41.0" prefWidth="278.0" promptText="Type here the Name " styleClass="search-box" stylesheets="@stylesCourses.css">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <TextField fx:id="descfu" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the description" styleClass="search-box" stylesheets="@stylesCourses.css">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                                 <children>
+                                    <TextField fx:id="pricefu" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the price" styleClass="search-box" stylesheets="@stylesCourses.css">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="53.0" prefWidth="335.0">
+                                 <children>
+                                    <TextField fx:id="typefu" alignment="CENTER" prefHeight="40.0" prefWidth="278.0" promptText="Type here the type" styleClass="search-box" stylesheets="@stylesCourses.css">
+                                       <font>
+                                          <Font name="Cambria" size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Button mnemonicParsing="false" onAction="#confirm" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #ffffff;" styleClass="shopping-online-card" stylesheets="@stylesCourses.css" text="UPDATE" textFill="#444748">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="66.0" prefWidth="807.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#returna" styleClass="transparent">
+                                 <graphic>
+                                    <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="transparent">
+                                       <image>
+                                          <Image url="@../images/home.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label prefHeight="29.0" prefWidth="88.0" text="language" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="74.0" text="English" textFill="#878787" underline="true">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="393.0" HBox.hgrow="ALWAYS" />
+                              <Label prefHeight="62.0" prefWidth="100.0" text="My Account" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/person.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="251.0" styleClass="shadow">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="270.0" text="Courses List" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="778.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="coursetable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" prefHeight="538.0" prefWidth="811.0" styleClass="table-view-new" stylesheets="@stylesCourses.css">
+                                <columns>
+                                  <TableColumn fx:id="namecol" prefWidth="101.59994983673096" text="NAME" />
+                                  <TableColumn fx:id="desccol" prefWidth="183.9999771118164" text="DESCRIPTION" />
+                                    <TableColumn fx:id="pricecol" prefWidth="73.5999755859375" text="PRICE" />
+                                    <TableColumn fx:id="typecol" prefWidth="109.60003662109375" text="TYPE" />
+                                    <TableColumn fx:id="nbwcol" prefWidth="149.60006713867188" text="NUMBER OF WORKSHOPS" />
+                                    <TableColumn fx:id="imagepathcol" prefWidth="173.5999755859375" text="Image Path" />
+                                </columns>
+                                 <HBox.margin>
+                                    <Insets top="100.0" />
+                                 </HBox.margin>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="86.0" prefHeight="100.0" prefWidth="200.0" styleClass="shadow" />
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="58.0" style="-fx-background-color: 00000019;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="7.0" layoutY="170.0" mnemonicParsing="false" onAction="#remove" prefHeight="36.0" prefWidth="54.0" styleClass="transparent" text="delete">
+                           <graphic>
+                              <ImageView fitHeight="59.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button layoutX="1.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCourse" prefHeight="25.0" prefWidth="38.0" styleClass="transparent" text="addCourse">
+                           <padding>
+                              <Insets left="10.0" right="20.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="73.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="22.0" layoutY="228.0" mnemonicParsing="false" onAction="#listworkshops" styleClass="transparent">
+                           <padding>
+                              <Insets left="-10.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="80.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/list.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="button" layoutX="12.0" layoutY="116.0" mnemonicParsing="false" onAction="#stat" prefHeight="46.0" prefWidth="53.0" styleClass="transparent" stylesheets="@stylesCourses.css">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/stat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button layoutX="15.0" layoutY="281.0" mnemonicParsing="false" onAction="#sortasc" prefHeight="40.0" prefWidth="40.0" styleClass="transparent" stylesheets="@stylesCourses.css">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/up.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="15.0" layoutY="317.0" mnemonicParsing="false" onAction="#sortdesc" prefHeight="40.0" prefWidth="40.0" styleClass="transparent" stylesheets="@stylesCourses.css">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/down.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="5.0" layoutY="367.0" mnemonicParsing="false" onAction="#print" styleClass="transparent" stylesheets="@stylesCourses.css">
+                           <graphic>
+                              <ImageView fitHeight="79.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/pdf.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                       <!--<String fx:value="search-button" />!-->
+                        <String fx:value="add-btn" />
+                     </styleClass>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </Pane>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

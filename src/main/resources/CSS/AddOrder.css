@@ -1,0 +1,51 @@
+/* General styles for all AnchorPane elements */
+.root, .anchor-pane {
+    -fx-background-color: white; /* Set the background color to white for the application */
+}
+
+/* Style for TextFields to give them rounded corners and a shadow */
+.text-field {
+    -fx-background-color: white; /* Set the text field background to white */
+    -fx-background-radius: 10; /* Set the corner radius to make it rounder */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Shadow effect for depth */
+    -fx-padding: 4 7 4 7; /* Appropriate padding inside text fields */
+}
+
+/* Style for TableView to give it a glow effect */
+.table-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0.5, 0, 0); /* Subtle shadow for depth */
+}
+
+/* Style for TableColumn headers */
+.table-view .column-header {
+    -fx-background-color: #778DA9; /* Background color for table column headers */
+    -fx-text-fill: #FFFFFF; /* White text for headers */
+    -fx-font-size: 14px; /* Font size for text in headers */
+}
+
+/* Style for Button */
+.button {
+    -fx-background-color: transparent; /* Set the background to transparent */
+    -fx-background-insets: 0;
+    -fx-background-radius: 5; /* Rounded corners for the button */
+    -fx-padding: 3 8 3 8; /* Padding inside buttons */
+    -fx-font-size: 12px; /* Font size for text in buttons */
+    -fx-border-color: transparent; /* Grey border for the button */
+    -fx-border-width: 1; /* Border width */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 1); /* Subtle shadow effect */
+    -fx-min-width: 40px; /* Minimum width for the button */
+    -fx-min-height: 15px; /* Minimum height for the button */
+    -fx-text-fill: black; /* Text color for the button */
+}
+
+/* Style for ImageView (logo) */
+.image-view {
+    -fx-effect: dropshadow(one-pass-box, black, 8, 0.0, 2, 2); /* Shadow effect for images */
+}
+
+/* Focused TextField styles */
+.text-field:focused {
+    -fx-border-color: #C9A43D; /* Highlight color when the field is focused */
+    -fx-border-width: 2; /* Border width when focused */
+}

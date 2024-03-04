@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1319.0" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Auction.ViewAuctionController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0">
+         <children>
+            <BorderPane layoutX="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@Stylesheet.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="810.0" prefWidth="451.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="donations" layoutX="100.0" layoutY="543.0" prefHeight="53.0" prefWidth="257.0" promptText="Donations">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font></TextField>
+                              <ImageView fx:id="Auctionoftheday1" fitHeight="296.0" fitWidth="247.0" layoutX="97.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Donationss.PNG" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                                 <children>
+                                    <Pane prefHeight="65.0" prefWidth="393.0" stylesheets="@Stylesheet.css" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Label layoutX="235.0" layoutY="-9.0" prefHeight="78.0" prefWidth="259.0" text="Auctions" textFill="WHITE">
+                                 <font>
+                                    <Font name="Blacksword" size="49.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="1009.0">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="769.0">
+                                 <padding>
+                                    <Insets top="40.0" />
+                                 </padding>
+                                 <children>
+                                    <VBox prefHeight="68.0" prefWidth="151.0">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="206.0" text="Add Auction">
+                                             <font>
+                                                <Font name="Blacksword" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <Button onAction="#AddAuctionController" prefHeight="63.0" prefWidth="506.0" textFill="#b9bec9">
+                                       <font>
+                                          <Font name="Century Schoolbook Bold" size="22.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="56.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/auction.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#logout" prefHeight="113.0" prefWidth="74.0" stylesheets="@../styles/stylesdash.css" textFill="#eee7e7">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="38.0" fitWidth="34.0">
+                                       <image>
+                                          <Image url="@../styles/icons8-logout-66.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="auctionTableView" prefHeight="688.0" prefWidth="893.0" stylesheets="@Stylesheet.css">
+                                 <columns>
+                                    <TableColumn fx:id="nameColumn" prefWidth="153.0" text="Auction Name" />
+                                    <TableColumn fx:id="priceColumn" prefWidth="124.0" text="Price" />
+                                    <TableColumn fx:id="timeColumn" prefWidth="100.0" text="Time" />
+                                    <TableColumn fx:id="dateColumn" prefWidth="147.0" text="Date" />
+                                    <TableColumn fx:id="updateButtonColumn" prefWidth="114.0" text="Update" />
+                                    <TableColumn fx:id="deleteButtonColumn" minWidth="0.0" prefWidth="91.0" text="Delete" />
+                                    <TableColumn fx:id="viewBidsButtonColumn" prefWidth="143.0" text="Auction Bids" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-view" />
+                                    <String fx:value="thumb" />
+                                 </styleClass>
+                              </TableView>
+
+
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="fruitImg" fitHeight="90.0" fitWidth="228.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/x.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

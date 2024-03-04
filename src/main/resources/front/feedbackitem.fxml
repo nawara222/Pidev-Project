@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="1123.0" spacing="5" style="-fx-background-color: #0d151c; -fx-background-radius: 5; -fx-background-insets: 0;" stylesheets="@../styles/styleitem.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.front.Feedback.FeedbackItemController">
+    <children>
+      <Label fx:id="status" prefHeight="20.0" prefWidth="106.0" text="Status" textFill="#FFFFFF">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin></Label>
+      <Label fx:id="Question" prefHeight="105.0" prefWidth="438.0" text="Question" textFill="#FFFFFF">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="Answer" prefHeight="58.0" prefWidth="309.0" text="Answer" textFill="#FFFFFF">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="Type" prefHeight="20.0" prefWidth="133.0" text="Type" textFill="#FFFFFF">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+   </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" color="#444444" radius="5.0" spread="0.2" />
+    </effect>
+</HBox>
